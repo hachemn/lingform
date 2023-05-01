@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr style="background-color: #3090C7">
+        <th colspan="9" class="text-light" style="font-size: 25px">Form</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          {{ form_start(form) }}
+          {{ form_widget(form) }}
+          <button class="btn">{{ button_label|default('Save') }}</button>
+          {{ form_end(form) }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
